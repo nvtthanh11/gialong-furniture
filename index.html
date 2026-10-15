@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Long Furniture | Nội Thất Đương Đại Phong Cách Pháp</title>
+    <meta name="description" content="Gia Long Furniture - Thương hiệu nội thất cao cấp phong cách Pháp đương đại. Bàn ăn bê tông LeBeton, gỗ sồi tự nhiên, sofa nỉ, da PU cao cấp. Showroom 67 Trần Não, Quận 2.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1C1917',
+                            primary: '#292524',
+                            accent: '#C5A880',
+                            accentHover: '#B39368',
+                            light: '#FAF8F5',
+                            card: '#FFFFFF',
+                            border: '#E7E5E4'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+        /* Hide scrollbar for category tabs */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-brand-light text-brand-primary font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-dark text-white text-xs py-2 px-4 text-center font-medium tracking-wide">
+        🇫🇷 BST NỘI THẤT PHÁP ĐƯƠNG ĐẠI — ƯU ĐÃI THÁNG GIẢM TỚI 35% TẤT CẢ SẢN PHẨM | SHOWROOM 67 TRẦN NÃO, QUẬN 2
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-brand-border transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-2xl font-bold tracking-widest text-brand-dark uppercase">GIA LONG</span>
+                <span class="text-[9px] tracking-[0.3em] text-brand-accent uppercase font-semibold">FURNITURE • PARIS STYLE</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-600">
+                <a href="#hero" class="hover:text-brand-accent transition-colors">Trang Chủ</a>
+                <a href="#catalog" class="hover:text-brand-accent transition-colors">Bộ Sưu Tập</a>
+                <a href="#about" class="hover:text-brand-accent transition-colors">Về Gia Long</a>
+                <a href="#showroom" class="hover:text-brand-accent transition-colors">Showroom Q2</a>
+                <a href="#contact" class="hover:text-brand-accent transition-colors">Liên Hệ</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-4">
+                <a href="tel:0909759727" class="hidden sm:flex items-center space-x-2 text-xs font-semibold text-stone-700 bg-stone-100 px-3.5 py-2 rounded-full hover:bg-stone-200 transition-colors">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    <span>0909 759 727</span>
+                </a>
+                <button onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})" class="bg-brand-dark text-white text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-full hover:bg-brand-accent transition-all duration-300 shadow-sm">
+                    Xem 25 Mẫu Hot
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section id="hero" class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-white to-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-stone-100 text-stone-800 text-xs px-3.5 py-1.5 rounded-full font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Đã kết nối kho tự động với ClickAI</span>
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-dark leading-[1.15] font-normal">
+                        Nghệ Thuật Sống <br>
+                        <span class="italic font-light text-brand-accent">Đương Đại Phong Cách Pháp</span>
+                    </h1>
+                    <p class="text-stone-600 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+                        Sự kết hợp tinh tế giữa vẻ thô mộc của bê tông đúc LeBeton và sự ấm cúng của gỗ tự nhiên. Mỗi sản phẩm là một bản tuyên ngôn về gu thẩm mỹ tinh tế cho ngôi nhà bạn.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <button onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})" class="bg-brand-accent text-white px-8 py-3.5 rounded-full font-medium hover:bg-brand-accentHover transition-colors shadow-md flex items-center space-x-2">
+                            <span>Khám Phá Danh Mục Sản Phẩm</span>
+                            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                        </button>
+                        <a href="https://zalo.me/0909759727" target="_blank" class="border border-stone-300 bg-white text-stone-800 px-7 py-3.5 rounded-full font-medium hover:border-brand-dark transition-colors flex items-center space-x-2">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                            <span>Chat Zalo Tư Vấn Nhanh</span>
+                        </a>
+                    </div>
+                    <!-- Value Props -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-brand-border">
+                        <div>
+                            <div class="font-serif text-2xl font-bold text-brand-dark">100%</div>
+                            <div class="text-xs text-stone-500 mt-1">Xuất xưởng đạt chuẩn châu Âu</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-2xl font-bold text-brand-dark">01 Năm</div>
+                            <div class="text-xs text-stone-500 mt-1">Bảo hành chính hãng (SOP 55)</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-2xl font-bold text-brand-dark">Miễn Phí</div>
+                            <div class="text-xs text-stone-500 mt-1">Giao & lắp đặt đơn từ 15tr</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden shadow-2xl bg-white border border-stone-200">
+                        <img src="images/products/bally_coffee_table_110.png" alt="Gia Long Furniture Showcase" class="w-full h-[460px] object-cover object-center hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-stone-100 shadow-lg">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-[10px] uppercase font-bold tracking-wider text-brand-accent">Bộ sưu tập Best Seller</span>
+                                    <h4 class="font-serif font-bold text-base text-stone-900">Bàn Ăn Bê Tông BALLY</h4>
+                                </div>
+                                <span class="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-semibold">In-Stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="catalog" class="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs uppercase tracking-[0.25em] text-brand-accent font-bold">DANH MỤC SẢN PHẨM TIÊU BIỂU</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark mt-2 font-normal">Bộ Sưu Tập 25 Mẫu Thiết Kế Chọn Lọc</h2>
+            <p class="text-stone-500 text-sm mt-3 font-light">
+                Mỗi danh mục đại diện cho 5 sản phẩm tinh tuyển nhất được nhập trực tiếp từ hệ thống quản lý kho của Gia Long Furniture.
+            </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="flex items-center justify-center space-x-2 sm:space-x-4 mb-10 overflow-x-auto no-scrollbar py-2">
+            <button onclick="filterCategory('all')" id="tab-all" class="category-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-brand-dark text-white shadow-sm whitespace-nowrap">
+                Tất Cả (25)
+            </button>
+            <button onclick="filterCategory('dining-table')" id="tab-dining-table" class="category-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white text-stone-600 border border-stone-200 hover:border-brand-dark whitespace-nowrap">
+                Bàn Ăn (5)
+            </button>
+            <button onclick="filterCategory('dining-chair')" id="tab-dining-chair" class="category-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white text-stone-600 border border-stone-200 hover:border-brand-dark whitespace-nowrap">
+                Ghế Ăn (5)
+            </button>
+            <button onclick="filterCategory('sofa')" id="tab-sofa" class="category-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white text-stone-600 border border-stone-200 hover:border-brand-dark whitespace-nowrap">
+                Sofa & Ghế Bành (5)
+            </button>
+            <button onclick="filterCategory('coffee-table')" id="tab-coffee-table" class="category-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white text-stone-600 border border-stone-200 hover:border-brand-dark whitespace-nowrap">
+                Bàn Trà & Console (5)
+            </button>
+            <button onclick="filterCategory('cabinet')" id="tab-cabinet" class="category-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white text-stone-600 border border-stone-200 hover:border-brand-dark whitespace-nowrap">
+                Tủ & Kệ Tivi (5)
+            </button>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- Product Detail Modal (Quick View) -->
+    <div id="product-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="relative bg-white rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl border border-stone-200 my-8">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 flex items-center justify-center transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <!-- Modal Image Area -->
+                <div class="bg-stone-50 p-6 flex items-center justify-center border-b md:border-b-0 md:border-r border-stone-200">
+                    <img id="modal-image" src="" alt="" class="max-h-[380px] w-auto object-contain drop-shadow-md">
+                </div>
+
+                <!-- Modal Content Area -->
+                <div class="p-6 sm:p-8 space-y-4 max-h-[85vh] overflow-y-auto">
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span id="modal-category" class="text-xs uppercase font-bold tracking-wider text-brand-accent"></span>
+                            <span class="text-stone-300">•</span>
+                            <span id="modal-sku" class="text-xs text-stone-500 font-mono"></span>
+                        </div>
+                        <h3 id="modal-name" class="font-serif text-2xl font-bold text-stone-900 mt-1"></h3>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="flex items-baseline space-x-3 pt-1">
+                        <span id="modal-price-sale" class="text-2xl font-bold text-brand-dark"></span>
+                        <span id="modal-price-orig" class="text-sm line-through text-stone-400"></span>
+                        <span id="modal-discount" class="bg-red-50 text-red-600 text-xs px-2 py-0.5 rounded font-bold"></span>
+                    </div>
+
+                    <p id="modal-desc" class="text-stone-600 text-sm font-light leading-relaxed"></p>
+
+                    <!-- Tech Specs Table -->
+                    <div class="bg-stone-50 p-4 rounded-xl border border-stone-200 text-xs space-y-2">
+                        <div class="flex justify-between border-b border-stone-200 pb-1.5">
+                            <span class="text-stone-500 font-medium">Kích Thước:</span>
+                            <span id="modal-dim" class="font-semibold text-stone-800 text-right"></span>
+                        </div>
+                        <div class="flex justify-between border-b border-stone-200 pb-1.5">
+                            <span class="text-stone-500 font-medium">Chất Liệu:</span>
+                            <span id="modal-mat" class="font-semibold text-stone-800 text-right max-w-[65%]"></span>
+                        </div>
+                        <div class="flex justify-between border-b border-stone-200 pb-1.5">
+                            <span class="text-stone-500 font-medium">Màu Sắc:</span>
+                            <span id="modal-color" class="font-semibold text-stone-800 text-right"></span>
+                        </div>
+                        <div class="flex justify-between border-b border-stone-200 pb-1.5">
+                            <span class="text-stone-500 font-medium">Tải Trọng Chịu Lực:</span>
+                            <span id="modal-cap" class="font-semibold text-stone-800 text-right"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-stone-500 font-medium">Chính Sách Bảo Hành:</span>
+                            <span id="modal-war" class="font-semibold text-emerald-700 text-right"></span>
+                        </div>
+                    </div>
+
+                    <!-- Features List -->
+                    <div class="space-y-1.5">
+                        <h5 class="text-xs font-bold uppercase tracking-wider text-stone-700">Đặc Điểm Nổi Bật:</h5>
+                        <ul id="modal-features" class="text-xs text-stone-600 space-y-1 list-disc list-inside"></ul>
+                    </div>
+
+                    <!-- Care Guide -->
+                    <div class="p-3 bg-amber-50/60 rounded-lg border border-amber-200/60 text-[11px] text-amber-900 leading-normal">
+                        <strong>Lưu ý bảo quản (Care Guide):</strong> <span id="modal-care"></span>
+                    </div>
+
+                    <!-- Action CTA -->
+                    <div class="pt-4 flex gap-3">
+                        <a id="modal-zalo-btn" href="https://zalo.me/0909759727" target="_blank" class="flex-1 bg-brand-dark text-white text-center py-3 rounded-xl text-xs font-semibold uppercase tracking-wider hover:bg-brand-accent transition-colors flex items-center justify-center space-x-1.5 shadow">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                            <span>Giữ Chỗ Cọc 50% Ngay</span>
+                        </a>
+                        <a href="tel:0909759727" class="px-4 py-3 bg-stone-100 rounded-xl hover:bg-stone-200 text-stone-700 flex items-center justify-center">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Showroom & About Section -->
+    <section id="showroom" class="py-16 bg-white border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-dark text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+                <div class="relative z-10 max-w-2xl space-y-6">
+                    <span class="text-xs uppercase tracking-[0.3em] text-brand-accent font-bold">TRẢI NGHIỆM THỰC TẾ</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-normal leading-tight">
+                        Ghé Thăm Showroom Không Gian Mẫu Tại Quận 2
+                    </h2>
+                    <p class="text-stone-300 text-sm font-light leading-relaxed">
+                        Kính mời quý khách hàng đến trải nghiệm trực tiếp độ đầm chắc của mặt bàn bê tông LeBeton, cảm nhận độ mịn của da PU Vanessa và ngắm trọn vẹn vân gỗ sồi tự nhiên tại không gian trưng bày chuẩn phong cách sống Pháp.
+                    </p>
+                    <div class="space-y-3 pt-2 text-sm text-stone-200">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-accent flex-shrink-0"></i>
+                            <span>Số 67 Trần Não, P. An Khánh, TP. Thủ Đức (Quận 2), TP. Hồ Chí Minh</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-brand-accent flex-shrink-0"></i>
+                            <span>Mở cửa: 09:00 - 20:00 (Tất cả các ngày trong tuần)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-brand-accent flex-shrink-0"></i>
+                            <span>Hotline tư vấn thiết kế: 0909 759 727 (Hỗ trợ mang mẫu tận nhà)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-stone-900 text-stone-400 text-xs py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-3">
+                <span class="font-serif text-xl font-bold tracking-widest text-white uppercase">GIA LONG</span>
+                <p class="text-[11px] leading-relaxed">Thương hiệu nội thất cao cấp phong cách Pháp đương đại. Đơn vị độc quyền dòng sản phẩm bê tông sợi LeBeton tại Việt Nam.</p>
+            </div>
+            <div>
+                <h6 class="font-semibold text-white uppercase tracking-wider mb-3">Chính Sách Vận Hành</h6>
+                <ul class="space-y-2 text-[11px]">
+                    <li>• Miễn phí giao hàng từ 15 triệu (SOP 27)</li>
+                    <li>• Đặt cọc 50% khi chốt đơn (SOP 3, RUL 15)</li>
+                    <li>• Bảo hành kết cấu 01 năm (SOP 55)</li>
+                    <li>• Trả góp Payoo lãi suất 0% (SOP 34)</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-semibold text-white uppercase tracking-wider mb-3">Kết Nối Hệ Thống ClickAI</h6>
+                <p class="text-[11px] leading-relaxed">Toàn bộ danh mục sản phẩm, thông số kích thước và tồn kho được đồng bộ trực tiếp với hệ thống AI Agent và Knowledge Retrieval của ClickAI Studio.</p>
+                <a href="sitemap.xml" target="_blank" class="inline-block mt-2 text-brand-accent underline">Xem Sitemap XML cho ClickAI</a>
+            </div>
+            <div>
+                <h6 class="font-semibold text-white uppercase tracking-wider mb-3">Liên Hệ Trực Tiếp</h6>
+                <p class="text-[11px]">Showroom: 67 Trần Não, P. An Khánh, Q2, TP.HCM</p>
+                <p class="text-[11px] mt-1">Hotline: 0909 759 727</p>
+                <p class="text-[11px] mt-1">Email: contact@gialongfurniture.vn</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-stone-800 text-center text-[10px]">
+            © 2026 GIA LONG FURNITURE. Tất cả quyền được bảo lưu. Thiết kế phục vụ tích hợp nền tảng ClickAI Studio.
+        </div>
+    </footer>
+
+    <!-- Floating AI Chat & Zalo Action Button -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end space-y-3">
+        <a href="https://zalo.me/0909759727" target="_blank" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+            <span class="font-bold text-xs">Zalo</span>
+        </a>
+        <button onclick="alert('Trợ lý AI Gia Long Assistant đã sẵn sàng! Bạn có thể nhúng mã script widget của ClickAI vào đây để trò chuyện 24/7 trực tiếp trên web.')" class="bg-brand-dark text-white px-4 py-3 rounded-full flex items-center space-x-2 shadow-xl hover:bg-brand-accent transition-all hover:scale-105">
+            <i data-lucide="bot" class="w-5 h-5 text-brand-accent"></i>
+            <span class="text-xs font-semibold">Hỏi AI Tư Vấn 24/7</span>
+        </button>
+    </div>
+
+    <!-- Product Data & Client Logic -->
+    <script>
+        const products = [{"id": "table-01", "category": "dining-table", "category_name": "Bàn Ăn", "name": "Bàn Ăn Bê Tông GATWICK LeBeton", "sku": "GATW-DT180-01", "image": "images/products/gatwick_dining_table.png", "price_original": 28500000, "price_sale": 18500000, "discount_percent": 35, "dimensions": "L160 x W90 x H76 cm (Có tùy chọn 180cm)", "material": "Mặt bê tông đúc sợi cường độ cao LeBeton phủ PU chống thấm; Chân gỗ tràm (Acacia) tự nhiên nguyên khối vát cạnh.", "colors": "Mặt bê tông xám đậm / Chân gỗ tràm xám khói", "weight_capacity": "150 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành kết cấu bê tông 01 năm chính hãng (SOP 55)", "short_desc": "Dòng bàn ăn bán chạy nhất của Gia Long Furniture, phối hợp hoàn hảo giữa nét thô mộc của bê tông và sự ấm cúng của gỗ tự nhiên.", "features": ["Mặt bàn bê tông sợi đúc nguyên khối chống co ngót nứt nẻ", "Xử lý phủ màng PU đa lớp kháng ố nước chanh, cà phê", "Chân gỗ tháo rời đóng kiện phẳng dễ dàng vận chuyển thang máy", "Thiết kế phong cách Pháp hiện đại, phù hợp cho 6 - 8 người"], "care_instructions": "Lau bằng khăn ẩm mềm hàng ngày. Dùng miếng lót khi đặt nồi nóng trên 80 độ C. Tránh chất tẩy rửa có nồng độ axit cao."}, {"id": "table-02", "category": "dining-table", "category_name": "Bàn Ăn", "name": "Bàn Ăn CUSCO Metal Frame", "sku": "CUSCO-TR180-01", "image": "images/products/cusco_dining_table.png", "price_original": 26000000, "price_sale": 17500000, "discount_percent": 33, "dimensions": "L180 x W90 x H76 cm", "material": "Mặt gỗ tràm (Acacia) ghép thanh dày dặn tự nhiên; Khung và chân sắt sơn tĩnh điện đen nhám chống rỉ.", "colors": "Màu gỗ tràm tự nhiên ấm áp / Chân kim loại đen", "weight_capacity": "130 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành mối mọt và khung chân 01 năm", "short_desc": "Phong cách Industrial mạnh mẽ, tôn vinh vẻ đẹp tự nhiên của vân gỗ tràm kết hợp khung kim loại thanh thoát.", "features": ["Vân gỗ tự nhiên tuổi thọ cao, không bị ố vàng theo thời gian", "Khung sắt hộp chịu lực uốn cực tốt, đầm chắc khi sử dụng", "Thích hợp căn hộ phong cách Loft, Duplex hoặc Biệt thự hiện đại"], "care_instructions": "Lau bằng khăn mềm vắt khô. Định kỳ 6 tháng thoa lớp dầu bảo dưỡng gỗ tự nhiên."}, {"id": "table-03", "category": "dining-table", "category_name": "Bàn Ăn", "name": "Bàn Ăn Tròn GATSBY Metropolitan", "sku": "GATS-RD130-01", "image": "images/products/gatsby_round_dining_table.png", "price_original": 24500000, "price_sale": 16900000, "discount_percent": 31, "dimensions": "Đường kính 130 cm x Cao 76 cm", "material": "Mặt bê tông đúc mài mịn màu trắng ngà hoặc xám; Chân trụ kim loại đen kiểu nan xòe nghệ thuật.", "colors": "Trắng ngà / Xám bê tông / Chân sắt đen", "weight_capacity": "120 kg", "stock_status": "Còn hàng tại Showroom 67 Trần Não", "warranty": "Bảo hành kỹ thuật 01 năm", "short_desc": "Thiết kế bàn tròn tạo cảm giác quây quần, ấm cúng cho bữa ăn gia đình, tối ưu diện tích cho căn hộ chung cư cao cấp.", "features": ["Dáng tròn đường kính 1m3 ngồi thoải mái từ 4 đến 6 người", "Chân trụ giữa tối ưu khoảng để chân, không bị vướng đầu gối", "Đường nét thanh lịch chuẩn phong cách sống Metropolitan Pháp"], "care_instructions": "Lau sạch vết dầu mỡ sau bữa ăn bằng nước ấm hoặc xà phòng loãng nhẹ."}, {"id": "table-04", "category": "dining-table", "category_name": "Bàn Ăn", "name": "Bàn Ăn FLOW Scandinavian", "sku": "FLOW-DT180-01", "image": "images/products/flow_dining_table.png", "price_original": 29000000, "price_sale": 19500000, "discount_percent": 33, "dimensions": "L180 x W90 x H76 cm", "material": "Mặt bê tông sợi LeBeton kết hợp chân gỗ Sồi (Solid Oak) tự nhiên nhập khẩu New Zealand.", "colors": "Bê tông xám sáng / Chân gỗ Sồi sáng màu tự nhiên", "weight_capacity": "150 kg", "stock_status": "Hàng sắp về (Coming Soon - Giảm 40%)", "warranty": "Bảo hành kết cấu 01 năm", "short_desc": "Tuyệt phẩm phong cách Bắc Âu (Scandinavian) thanh bình và nhã nhặn, tôn lên ánh sáng tự nhiên của phòng ăn.", "features": ["Chân gỗ Sồi New Zealand tiện tròn thanh lịch", "Mặt bàn bo tròn nhẹ các góc an toàn cho gia đình có trẻ nhỏ", "Đạt chuẩn xuất khẩu châu Âu"], "care_instructions": "Tránh đặt sát nơi phả hơi lạnh điều hòa liên tục làm khô gỗ."}, {"id": "table-05", "category": "dining-table", "category_name": "Bàn Ăn", "name": "Bàn Ăn Mặt Gốm CERAMIC Table", "sku": "CERA-DT180-01", "image": "images/products/ceramic_table.png", "price_original": 31000000, "price_sale": 21500000, "discount_percent": 30, "dimensions": "L180 x W90 x H75 cm", "material": "Mặt phiến Ceramic nung nhiệt cao cấp chống trầy; Khung gầm hợp kim nhôm đúc và chân kim loại sơn mờ.", "colors": "Mặt gốm vân mây ghi sáng / Chân kim loại anthracite", "weight_capacity": "140 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành mặt đá Ceramic và khung chân 01 năm", "short_desc": "Đỉnh cao chống trầy xước và chịu nhiệt, bề mặt đá gốm siêu bền cho các bữa tiệc gia đình sôi động.", "features": ["Chống dao kéo trầy xước tuyệt đối, chống ố màu rượu vang", "Chịu nhiệt trực tiếp từ đáy nồi lẩu/nồi canh nóng", "Vệ sinh cực nhanh chỉ bằng một đường lau khăn ướt"], "care_instructions": "Lau dọn tự do bằng các chất tẩy rửa bề mặt thông thường."}, {"id": "chair-01", "category": "dining-chair", "category_name": "Ghế Ăn", "name": "Ghế Ăn Da PU MARIUS (Best Seller)", "sku": "MARIUS2-CHA06", "image": "images/products/marius.jpg", "price_original": 4200000, "price_sale": 2750000, "discount_percent": 35, "dimensions": "L54 x W48 x H83 cm (Chiều cao đệm ngồi 46 cm)", "material": "Bọc da PU Vanessa cao cấp chống nổ; Đệm mút D30 chống xẹp; Khung và chân sắt sơn tĩnh điện đen.", "colors": "Nâu da bò cổ điển (Cognac Brown) / Xám ghi / Đen", "weight_capacity": "130 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành đệm và da PU 01 năm", "short_desc": "Mẫu ghế ăn bán chạy số 1 tại Gia Long Furniture, đệm ngồi êm ái nâng đỡ cột sống hoàn hảo.", "features": ["Chất da PU Vanessa mô phỏng da thật mềm mịn, không bí bách", "Chân sắt thon gọn chịu lực cao, có nút cao su chống trầy sàn", "Dễ dàng lau chùi khi dính thức ăn hoặc vết bẩn"], "care_instructions": "Lau bằng khăn ẩm mềm. Không dùng cồn hoặc dung môi hóa chất mạnh."}, {"id": "chair-02", "category": "dining-chair", "category_name": "Ghế Ăn", "name": "Ghế Ăn Bắc Âu ALISON", "sku": "ALISON-CHA01", "image": "images/products/alison.jpg", "price_original": 3800000, "price_sale": 2500000, "discount_percent": 34, "dimensions": "L51 x W53 x H79 cm (Đệm ngồi cao 46 cm)", "material": "Vải sợi dệt 100% Polyester kháng khuẩn; Đệm mút tỷ trọng cao 30 Kg/m3; Chân gỗ Sồi New Zealand.", "colors": "Xám đậm / Xám sáng / Đỏ mận / Xanh Fjord", "weight_capacity": "120 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành khung chân và đệm 01 năm", "short_desc": "Phong cách thuần Scandinavian đáng yêu và hiện đại, kích thước nhỏ gọn vừa vặn cho mọi căn hộ chung cư.", "features": ["Tựa lưng cong ôm nhẹ bờ lưng khi dùng bữa", "Vải bọc dệt sợi 2 lớp dày dặn, bền màu", "Chân gỗ Sồi tự nhiên phủ sáp mờ thanh nhã"], "care_instructions": "Hút bụi bề mặt định kỳ. Xử lý vết bẩn bằng bọt xà phòng chuyên dụng cho vải nỉ."}, {"id": "chair-03", "category": "dining-chair", "category_name": "Ghế Ăn", "name": "Ghế Ăn Sang Trọng ARTHUR", "sku": "ARTHUR-CHA02", "image": "images/products/arthur.png", "price_original": 4500000, "price_sale": 2990000, "discount_percent": 33, "dimensions": "L56 x W52 x H82 cm", "material": "Đệm mút đúc liền khối bọc vải dệt texture; Chân sắt sơn tĩnh điện đen vuốt côn tinh tế.", "colors": "Xanh navy thanh lịch / Ghi sáng / Vàng mù tạt", "weight_capacity": "130 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành 01 năm chính hãng", "short_desc": "Thiết kế hiện đại mang hơi thở đương đại châu Âu, tạo điểm nhấn nổi bật cho không gian bàn ăn.", "features": ["Kiểu dáng uốn lượn mềm mại tôn vinh vẻ đẹp kiến trúc", "Đệm ngồi dày dặn tạo cảm giác thư giãn kéo dài trong bữa tiệc", "Khung thép chịu lực tiêu chuẩn quốc tế"], "care_instructions": "Lau sạch bụi bằng khăn khô hoặc chổi lông mềm."}, {"id": "chair-04", "category": "dining-chair", "category_name": "Ghế Ăn", "name": "Ghế BISTRO Cổ Điển Pháp", "sku": "BISTRO-CHA03", "image": "images/products/bistro.jpg", "price_original": 3200000, "price_sale": 2100000, "discount_percent": 34, "dimensions": "L45 x W46 x H88 cm", "material": "Khung gỗ tràm (Acacia) uốn nhiệt kết hợp mây đan tự nhiên (Natural Rattan) ở lưng tựa.", "colors": "Màu gỗ tràm vintage / Mây đan màu cói mộc", "weight_capacity": "110 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành khung gỗ 01 năm", "short_desc": "Đưa không gian quán cafe lãng mạn bên bờ sông Seine của Paris vào ngay góc bếp ấm áp nhà bạn.", "features": ["Mây đan mắt cáo thông thoáng khí, không gây hầm bí", "Gỗ tràm chắc chắn mang phong cách Bistro cổ điển của Pháp", "Nhẹ nhàng, dễ di chuyển sắp xếp"], "care_instructions": "Dùng khăn ẩm lau sạch phần mây đan, tránh phơi nắng gắt trực tiếp."}, {"id": "chair-05", "category": "dining-chair", "category_name": "Ghế Ăn", "name": "Ghế Tựa Lưng Cong CROSS", "sku": "CROSS-CHA04", "image": "images/products/cross.jpg", "price_original": 3500000, "price_sale": 2300000, "discount_percent": 34, "dimensions": "L50 x W48 x H86 cm", "material": "Khung gỗ tự nhiên kết hợp nan chéo kim loại uốn cong trợ lực phía sau lưng tựa.", "colors": "Gỗ nâu hạt dẻ (Walnut stain) / Trắng ngà", "weight_capacity": "120 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành 01 năm", "short_desc": "Mẫu ghế nan chéo kinh điển của nghệ thuật nội thất Country French, mộc mạc và trường tồn với thời gian.", "features": ["Nan chéo lưng ôm trọn tư thế ngồi tự nhiên", "Mặt ghế đệm êm hoặc gỗ nguyên tấm thoải mái", "Dễ phối với mọi kiểu bàn ăn từ gỗ đến bê tông"], "care_instructions": "Lau khăn ẩm, lau khô lại ngay bằng khăn mềm."}, {"id": "sofa-01", "category": "sofa", "category_name": "Sofa & Ghế Bành", "name": "Sofa Băng 3 Chỗ BORDEAUX", "sku": "BORD-SO3-01", "image": "images/products/bordeaux_3.png", "price_original": 36000000, "price_sale": 24500000, "discount_percent": 32, "dimensions": "L210 x W88 x H78 cm", "material": "Khung gỗ thông tự nhiên đã qua sấy chống mối mọt; Đệm mút D35 kết hợp lông vũ nhân tạo êm ái; Vải nỉ cao cấp nhập khẩu.", "colors": "Xanh biển sâu (Deep Ocean) / Xám tro / Be ấm", "weight_capacity": "350 kg", "stock_status": "Còn hàng tại Showroom 67 Trần Não", "warranty": "Bảo hành khung sườn và đệm 02 năm", "short_desc": "Đỉnh cao sự thoải mái và thanh lịch kiểu Pháp, đường nét vuông vức nhưng ngập tràn cảm giác mềm mại.", "features": ["Túi đệm lưng lót gòn vũ tạo cảm giác chìm đắm khi tựa vào", "Áo gối tựa và đệm ngồi có khóa kéo tháo rời dễ dàng giặt sấy", "Chân gỗ tự nhiên nâng gầm 12cm thuận tiện cho robot hút bụi di chuyển"], "care_instructions": "Hút bụi hàng tuần. Giặt hấp khô vỏ bọc khi cần vệ sinh tổng thể."}, {"id": "sofa-02", "category": "sofa", "category_name": "Sofa & Ghế Bành", "name": "Sofa Văng Hiện Đại ASHTON", "sku": "ASHT-SO3-02", "image": "images/products/ashton.jpg", "price_original": 32000000, "price_sale": 21900000, "discount_percent": 31, "dimensions": "L200 x W85 x H76 cm", "material": "Vải dệt sợi thô cao cấp bền bỉ; Đệm mút bọt biển đàn hồi cao; Chân kim loại sơn tĩnh điện đen mờ.", "colors": "Xám lông chuột / Kem cát", "weight_capacity": "300 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành kết cấu 02 năm", "short_desc": "Thiết kế tay vịn mỏng tinh tế, tối đa hóa diện tích bề mặt ngồi thực tế cho phòng khách căn hộ hiện đại.", "features": ["Tay vịn thanh mảnh giúp tiết kiệm diện tích phòng khách", "Gầm ghế cao thông thoáng cho không gian nhẹ nhàng", "Độ nảy êm ái vừa phải, không gây đau lưng khi ngồi lâu"], "care_instructions": "Tránh ánh nắng mặt trời chiếu trực tiếp làm bạc màu vải."}, {"id": "sofa-03", "category": "sofa", "category_name": "Sofa & Ghế Bành", "name": "Sofa Góc Chữ L DAVIS Comfort", "sku": "DAVI-SEC-01", "image": "images/products/davis.jpg", "price_original": 45000000, "price_sale": 30500000, "discount_percent": 32, "dimensions": "L270 x W165 x H80 cm (Góc L rộng rãi)", "material": "Khung gỗ sồi tự nhiên; Lò xo sóng giằng thép chịu lực; Đệm mút phân tầng bọc vải sợi tổng hợp chống thấm nhẹ.", "colors": "Xám xi măng / Nâu xám (Taupe)", "weight_capacity": "500 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành 02 năm", "short_desc": "Không gian sinh hoạt lý tưởng cho cả gia đình quây quần xem phim, nằm thư giãn sau ngày làm việc bận rộn.", "features": ["Phần góc chữ L dài 1m65 nằm ngả lưng xem phim cực kỳ thoải mái", "Kết cấu module tháo lắp dễ dàng khi bốc vác qua thang bộ chung cư", "Chất vải chống bám lông thú cưng, dễ làm sạch"], "care_instructions": "Dùng cây lăn bụi hoặc máy hút bụi cầm tay để vệ sinh bề mặt."}, {"id": "sofa-04", "category": "sofa", "category_name": "Sofa & Ghế Bành", "name": "Sofa Băng Thấp KACEY Đương Đại", "sku": "KACE-SO3-01", "image": "images/products/kacey.png", "price_original": 34000000, "price_sale": 23000000, "discount_percent": 32, "dimensions": "L205 x W90 x H72 cm", "material": "Vải nỉ nhung tuyết mịn màng; Khung gỗ thông; Mút tỷ trọng cao nguyên khối.", "colors": "Màu be sáng (Oatmeal) / Xanh ngọc lục bảo", "weight_capacity": "320 kg", "stock_status": "Hàng sắp về (Coming Soon)", "warranty": "Bảo hành 02 năm", "short_desc": "Dáng ghế thấp bồng bềnh (Low-profile) xu hướng kiến trúc đương đại, mở rộng tầm nhìn cho phòng khách trần thấp.", "features": ["Đường may chìm tinh xảo không lộ chỉ", "Cảm giác êm như mây khi tựa lưng", "Tôn lên các món đồ decor bàn trà xung quanh"], "care_instructions": "Dùng bàn chải lông mềm chải nhẹ theo chiều tuyết vải."}, {"id": "sofa-05", "category": "sofa", "category_name": "Sofa & Ghế Bành", "name": "Ghế Đơn Thư Giãn FELIX Armchair", "sku": "FELI-ARM-01", "image": "images/products/felix.png", "price_original": 14500000, "price_sale": 9900000, "discount_percent": 31, "dimensions": "L82 x W84 x H80 cm", "material": "Da PU cao cấp hoặc vải dạ len; Khung gỗ Sồi tự nhiên uốn cong.", "colors": "Nâu da bò / Vàng hoàng yến / Ghi xám", "weight_capacity": "140 kg", "stock_status": "Còn hàng tại Showroom 67 Trần Não", "warranty": "Bảo hành 01 năm", "short_desc": "Chiếc ghế bành đọc sách thư giãn hoàn hảo đặt cạnh cửa sổ hoặc làm điểm nhấn sang trọng cho góc phòng khách.", "features": ["Độ nghiêng tựa lưng tính toán công thái học chống mỏi cổ", "Tay vịn gỗ sồi mài nhẵn mịn sờ rất thích tay", "Phụ kiện trang trí nâng tầm đẳng cấp gia chủ"], "care_instructions": "Lau khăn mềm định kỳ để giữ bề mặt luôn sạch đẹp."}, {"id": "coffee-01", "category": "coffee-table", "category_name": "Bàn Trà & Bàn Console", "name": "Bàn Trà Bê Tông BALLY Coffee 110", "sku": "BALL-CT110-01", "image": "images/products/bally_coffee_table_110.png", "price_original": 12500000, "price_sale": 8200000, "discount_percent": 34, "dimensions": "L110 x W60 x H42 cm", "material": "Mặt bê tông đúc LeBeton phủ PU chống thấm; Chân gỗ tràm tự nhiên xám mờ.", "colors": "Mặt bê tông xám / Chân gỗ xám đồng bộ", "weight_capacity": "80 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành kết cấu 01 năm (SOP 55)", "short_desc": "Món đồ không thể thiếu khi kết hợp cùng bộ sofa nỉ hoặc sofa da, mang lại chất cá tính cho trung tâm phòng khách.", "features": ["Độ cao chuẩn 42cm vừa tầm tay với khi ngồi trên sofa", "Chống thấm nước trà, cà phê hiệu quả", "Độ đầm chắc cao không sợ trẻ nhỏ chạy nhảy xê dịch"], "care_instructions": "Lau bằng khăn ẩm, dùng lót ly khi uống nước đá."}, {"id": "coffee-02", "category": "coffee-table", "category_name": "Bàn Trà & Bàn Console", "name": "Bàn Trà Mặt Kính Gỗ BLOOM Glass", "sku": "BLOO-CT01-GL", "image": "images/products/bloom_glass.png", "price_original": 14000000, "price_sale": 9500000, "discount_percent": 32, "dimensions": "L120 x W65 x H40 cm", "material": "Kính cường lực 10mm vát cạnh; Khung gỗ Sồi (Oak) tự nhiên đan lưới nghệ thuật phía dưới.", "colors": "Kính trong suốt / Khung gỗ sồi tự nhiên sáng màu", "weight_capacity": "70 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành khung gỗ 01 năm", "short_desc": "Mặt kính trong suốt phô diễn trọn vẹn kết cấu gỗ tự nhiên đan xen tinh tế phía dưới, tạo cảm giác thông thoáng cho phòng khách.", "features": ["Kính cường lực chịu lực va đập gấp 5 lần kính thường", "Tầng dưới có ngăn tiện lợi để sách báo, điều khiển tivi", "Cạnh kính mài bóng mịn an toàn tuyệt đối"], "care_instructions": "Lau mặt kính bằng nước lau kính chuyên dụng để giữ độ trong suốt."}, {"id": "coffee-03", "category": "coffee-table", "category_name": "Bàn Trà & Bàn Console", "name": "Bàn Console Trang Trí BALLY", "sku": "BALL-CS120-01", "image": "images/products/bally_console.png", "price_original": 15500000, "price_sale": 10500000, "discount_percent": 32, "dimensions": "L120 x W40 x H82 cm", "material": "Mặt bê tông sợi đúc xám; Chân và khung gỗ tràm tự nhiên; 2 ngăn kéo tiện ích.", "colors": "Bê tông xám / Gỗ tràm xám", "weight_capacity": "60 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành 01 năm", "short_desc": "Đặt tại tiền sảnh ra vào hoặc sau lưng ghế sofa để bày bình hoa, tượng decor và tranh ảnh kỷ niệm gia đình.", "features": ["Có 2 hộc kéo cất giữ chìa khóa, ví tiền ngăn nắp ngay cửa vào", "Chiều sâu chỉ 40cm không chiếm diện tích hành lang", "Tạo điểm nhấn thẩm mỹ đầu tiên khi khách bước vào nhà"], "care_instructions": "Lau bụi bằng khăn ẩm mềm."}, {"id": "coffee-04", "category": "coffee-table", "category_name": "Bàn Trà & Bàn Console", "name": "Bàn Console Nghệ Thuật HELIX", "sku": "HELI-CS130-01", "image": "images/products/helix_console.png", "price_original": 17000000, "price_sale": 11500000, "discount_percent": 32, "dimensions": "L130 x W42 x H80 cm", "material": "Khung chân kim loại uốn lượn hình học sơn đồng cổ; Mặt đá tự nhiên hoặc gỗ Sồi cao cấp.", "colors": "Kim loại ánh đồng / Mặt đá vân mây trắng", "weight_capacity": "60 kg", "stock_status": "Còn hàng tại Showroom 67 Trần Não", "warranty": "Bảo hành 01 năm", "short_desc": "Như một tác phẩm điêu khắc nghệ thuật đương đại, nâng tầm đẳng cấp không gian sảnh căn hộ penthouse.", "features": ["Kiểu chân Helix độc bản không trùng lặp", "Mạ lớp chống oxy hóa bền bỉ hàng chục năm", "Được các kiến trúc sư tin dùng trong các dự án cao cấp"], "care_instructions": "Dùng chổi lông mềm phủi bụi định kỳ."}, {"id": "coffee-05", "category": "coffee-table", "category_name": "Bàn Trà & Bàn Console", "name": "Bàn Trà Tròn FLOW Scandinavian", "sku": "FLOW-CT90-01", "image": "images/products/flow_coffee_table.png", "price_original": 11500000, "price_sale": 7800000, "discount_percent": 32, "dimensions": "Đường kính 90 cm x Cao 42 cm", "material": "Mặt bê tông LeBeton xám sáng; Chân gỗ Sồi tự nhiên New Zealand.", "colors": "Mặt bê tông xám nhạt / Chân gỗ Sồi tự nhiên", "weight_capacity": "70 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành 01 năm", "short_desc": "Bàn trà tròn mềm mại giúp luồng di chuyển trong phòng khách thông suốt, tạo cảm giác thân thiện gần gũi.", "features": ["Dáng tròn an toàn tuyệt đối khi nhà có trẻ nhỏ tập đi", "Chất liệu chống thấm nước trà và sữa", "Hài hòa với mọi mẫu sofa hiện đại"], "care_instructions": "Lau bằng khăn ẩm mềm vắt khô nước."}, {"id": "cabinet-01", "category": "cabinet", "category_name": "Tủ & Kệ TV", "name": "Kệ Tivi Bê Tông BALLY TV Stand", "sku": "BALL-TV180-01", "image": "images/products/bally_tv_stand.png", "price_original": 22500000, "price_sale": 14900000, "discount_percent": 34, "dimensions": "L180 x W45 x H50 cm", "material": "Mặt trên bê tông LeBeton; Thân tủ gỗ tràm tự nhiên có 2 hộc kéo và 1 ngăn mở; Ray trượt âm tự hít chậm.", "colors": "Bê tông xám / Gỗ tràm xám khói", "weight_capacity": "120 kg (Để vừa TV đến 85 inch)", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành kết cấu và ray trượt 01 năm", "short_desc": "Mảnh ghép đồng bộ hoàn mỹ với bộ sưu tập BALLY, mặt bê tông chịu lực cực tốt cho các dòng TV kích thước lớn.", "features": ["Ray trượt giảm chấn tự hít Blum đóng mở êm ru không gây tiếng động", "Mặt bê tông dày dặn chịu lực TV lớn hoặc dàn loa soundbar cao cấp", "Lỗ luồn dây điện thông minh phía sau giữ không gian gọn gàng"], "care_instructions": "Lau bề mặt bằng khăn ẩm mềm. Không để nước đọng lâu trong ray trượt."}, {"id": "cabinet-02", "category": "cabinet", "category_name": "Tủ & Kệ TV", "name": "Kệ Tivi CUSCO Industrial Metal", "sku": "CUSC-TV150-01", "image": "images/products/cusco_tv_stand.png", "price_original": 19500000, "price_sale": 13200000, "discount_percent": 32, "dimensions": "L150 x W40 x H48 cm", "material": "Gỗ tràm Acacia ghép thanh dày phủ sáp; Khung bao và chân sắt sơn tĩnh điện đen mờ; 1 ngăn kéo 4 hộc để đồ.", "colors": "Gỗ tràm tự nhiên mộc / Kim loại đen", "weight_capacity": "100 kg", "stock_status": "Còn hàng tại Kho", "warranty": "Bảo hành 01 năm", "short_desc": "Đậm chất cá tính cho góc giải trí phòng khách phong cách Industrial, nhiều ngăn chứa đồ cho đầu thu, ampli và tay cầm chơi game.", "features": ["Khung sắt gia cố xung quanh cực kỳ cứng cáp", "Các hộc chứa đồ rộng rãi cho thiết bị giải trí", "Chân cao dễ dàng quét dọn vệ sinh bên dưới"], "care_instructions": "Lau khăn ẩm, tránh hóa chất tẩy rửa mạnh."}, {"id": "cabinet-03", "category": "cabinet", "category_name": "Tủ & Kệ TV", "name": "Tủ Bát Dĩa CUSCO Sideboard 3 Cánh", "sku": "CUSC-SB190-01", "image": "images/products/cusco_sideboard.png", "price_original": 27000000, "price_sale": 18500000, "discount_percent": 31, "dimensions": "L190 x W45 x H77 cm", "material": "Gỗ tràm Acacia tự nhiên kết hợp khung kim loại đen; 3 cánh mở và 3 ngăn kéo trên; Bản lề hơi giảm chấn cao cấp.", "colors": "Gỗ tràm nâu mộc / Khung kim loại đen", "weight_capacity": "150 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành kết cấu 01 năm", "short_desc": "Không gian lưu trữ đồ ăn, bát đĩa, ly rượu vang khổng lồ cho phòng ăn của biệt thự và căn hộ cao cấp.", "features": ["Sức chứa cực lớn với 3 khoang cánh mở và 3 hộc kéo riêng biệt", "Mặt trên dài 1m9 thoải mái để máy pha cafe, máy nướng bánh mì hoặc decor tranh", "Bản lề hơi tự hít êm ái, tuổi thọ trên 50.000 lần đóng mở"], "care_instructions": "Lau bằng khăn ẩm mềm vắt khô nước."}, {"id": "cabinet-04", "category": "cabinet", "category_name": "Tủ & Kệ TV", "name": "Tủ Bát Dĩa BALLY Sideboard LeBeton", "sku": "BALL-SB180-01", "image": "images/products/bally_sideboard.png", "price_original": 29500000, "price_sale": 19900000, "discount_percent": 33, "dimensions": "L180 x W45 x H78 cm", "material": "Mặt nóc bê tông đúc LeBeton nguyên tấm; Thân gỗ tràm tự nhiên 3 cửa mở chia ngăn thông minh.", "colors": "Mặt bê tông xám / Thân gỗ xám khói", "weight_capacity": "160 kg", "stock_status": "Còn hàng tại Kho (In-Stock)", "warranty": "Bảo hành kết cấu bê tông và gỗ 01 năm", "short_desc": "Sự kết hợp sang trọng độc nhất giữa mặt bê tông xám mịn và vân gỗ tràm, biến góc phòng ăn thành không gian tiệc sang trọng.", "features": ["Mặt bê tông chống thấm thoải mái bày khay trà và đồ uống", "Các ngăn đợt bên trong điều chỉnh được độ cao linh hoạt", "Đóng kiện phẳng chuẩn xuất khẩu, dễ lắp đặt"], "care_instructions": "Lau mặt bê tông bằng khăn ẩm mềm, tránh đồ ăn chua tiếp xúc quá lâu."}, {"id": "cabinet-05", "category": "cabinet", "category_name": "Tủ & Kệ TV", "name": "Kệ Tivi GATSBY Metropolitan 200", "sku": "GATS-TV200-01", "image": "images/products/gatsby_tv_cabinet.png", "price_original": 25000000, "price_sale": 16900000, "discount_percent": 32, "dimensions": "L200 x W45 x H52 cm", "material": "Mặt bê tông mài trắng ngà hoặc xám; Thân gỗ công nghiệp phủ veneer sồi sẫm màu; Chân kim loại mạ đồng viền sắc nét.", "colors": "Trắng ngà / Veneer sồi đen / Viền kim loại đồng", "weight_capacity": "120 kg", "stock_status": "Còn hàng tại Showroom 67 Trần Não", "warranty": "Bảo hành 01 năm", "short_desc": "Đẳng cấp xa hoa phong cách Gatsby Metropolitan Pháp, tôn vinh chiếc TV siêu lớn và mang lại không khí quý phái cho gia chủ.", "features": ["Chiều dài 2m hoành tráng cho các phòng khách rộng trên 30m2", "Nẹp kim loại đồng tạo viền phản chiếu ánh sáng sang trọng", "Hệ thống ngăn kéo âm giấu kín tinh tế"], "care_instructions": "Lau mặt tủ bằng khăn mềm, tránh để vật sắc nhọn cọ xát."}];
+
+        function formatVND(num) {
+            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(num);
+        }
+
+        function renderProducts(items) {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = items.map(p => `
+                <div class="group bg-white rounded-2xl overflow-hidden border border-brand-border hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative bg-stone-100 h-64 overflow-hidden flex items-center justify-center p-4">
+                        <img src="${p.image}" alt="${p.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 left-3 flex flex-col gap-1">
+                            <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">-${p.discount_percent}%</span>
+                            <span class="bg-brand-dark text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow">${p.stock_status.includes('In-Stock') ? 'Có Sẵn' : 'Coming Soon'}</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-[10px] uppercase font-bold tracking-wider text-brand-accent mb-1">${p.category_name}</div>
+                            <h4 class="font-serif font-bold text-base text-stone-900 group-hover:text-brand-accent transition-colors line-clamp-1">${p.name}</h4>
+                            <p class="text-xs text-stone-500 font-mono mt-0.5">${p.sku}</p>
+                            <p class="text-xs text-stone-600 font-light mt-2 line-clamp-2">${p.short_desc}</p>
+                        </div>
+                        <div class="pt-4 border-t border-stone-100 mt-4">
+                            <div class="flex items-baseline justify-between mb-3">
+                                <div>
+                                    <div class="text-base font-bold text-brand-dark">${formatVND(p.price_sale)}</div>
+                                    <div class="text-[11px] line-through text-stone-400">${formatVND(p.price_original)}</div>
+                                </div>
+                                <span class="text-[11px] text-stone-400 font-light">${p.dimensions.split('(')[0]}</span>
+                            </div>
+                            <button onclick="openModal('${p.id}')" class="w-full bg-stone-100 hover:bg-brand-dark hover:text-white text-stone-800 text-xs font-semibold py-2.5 rounded-xl transition-all duration-200">
+                                Xem Thông Số Chi Tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function filterCategory(cat) {
+            // update tabs UI
+            document.querySelectorAll('.category-tab').forEach(t => {
+                t.classList.remove('bg-brand-dark', 'text-white');
+                t.classList.add('bg-white', 'text-stone-600');
+            });
+            const activeTab = document.getElementById(`tab-${cat}`);
+            if (activeTab) {
+                activeTab.classList.remove('bg-white', 'text-stone-600');
+                activeTab.classList.add('bg-brand-dark', 'text-white');
+            }
+
+            if (cat === 'all') {
+                renderProducts(products);
+            } else {
+                renderProducts(products.filter(p => p.category === cat));
+            }
+        }
+
+        function openModal(prodId) {
+            const p = products.find(x => x.id === prodId);
+            if (!p) return;
+            document.getElementById('modal-image').src = p.image;
+            document.getElementById('modal-image').alt = p.name;
+            document.getElementById('modal-category').innerText = p.category_name;
+            document.getElementById('modal-sku').innerText = `Mã: ${p.sku}`;
+            document.getElementById('modal-name').innerText = p.name;
+            document.getElementById('modal-price-sale').innerText = formatVND(p.price_sale);
+            document.getElementById('modal-price-orig').innerText = formatVND(p.price_original);
+            document.getElementById('modal-discount').innerText = `TIẾT KIỆM ${p.discount_percent}% (SOP 57)`;
+            document.getElementById('modal-desc').innerText = p.short_desc;
+            document.getElementById('modal-dim').innerText = p.dimensions;
+            document.getElementById('modal-mat').innerText = p.material;
+            document.getElementById('modal-color').innerText = p.colors;
+            document.getElementById('modal-cap').innerText = p.weight_capacity;
+            document.getElementById('modal-war').innerText = p.warranty;
+            document.getElementById('modal-care').innerText = p.care_instructions;
+
+            const featUl = document.getElementById('modal-features');
+            featUl.innerHTML = p.features.map(f => `<li>${f}</li>`).join('');
+
+            document.getElementById('product-modal').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Close on ESC
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Close when clicking backdrop
+        document.getElementById('product-modal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('product-modal')) closeModal();
+        });
+
+        // Initial render
+        renderProducts(products);
+        lucide.createIcons();
+    </script>
+</body>
+</html>
