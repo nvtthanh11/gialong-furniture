@@ -2143,6 +2143,9 @@
         function closeModal() {
             document.getElementById('product-modal').classList.add('hidden');
             document.body.classList.remove('overflow-hidden');
+            if (window.location.hash.startsWith('#prod-')) {
+                history.pushState('', document.title, window.location.pathname + window.location.search);
+            }
         }
 
         function renderArticles() {
@@ -2217,9 +2220,21 @@
             if (e.target === document.getElementById('article-modal')) closeArticleModal();
         });
 
+        // Auto open modal from URL hash (e.g. #prod-coffee-03)
+        function checkHash() {
+            const hash = window.location.hash;
+            if (hash && hash.startsWith('#prod-')) {
+                const prodId = hash.replace('#prod-', '');
+                openModal(prodId);
+            }
+        }
+
+        window.addEventListener('hashchange', checkHash);
+
         // Initial render
         renderProducts(products);
         renderArticles();
+        checkHash();
         lucide.createIcons();
     </script>
 </body>
