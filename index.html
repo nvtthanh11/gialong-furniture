@@ -2222,19 +2222,23 @@
 
         // Auto open modal from URL hash (e.g. #prod-coffee-03)
         function checkHash() {
-            const hash = window.location.hash;
-            if (hash && hash.startsWith('#prod-')) {
-                const prodId = hash.replace('#prod-', '');
-                openModal(prodId);
+            const hash = window.location.hash || '';
+            if (hash.includes('#prod-')) {
+                const prodId = hash.split('#prod-')[1].split('?')[0].split('&')[0];
+                console.log('Opening modal for product ID:', prodId);
+                setTimeout(() => openModal(prodId), 50);
             }
         }
 
         window.addEventListener('hashchange', checkHash);
+        window.addEventListener('load', checkHash);
+        document.addEventListener('DOMContentLoaded', checkHash);
 
         // Initial render
         renderProducts(products);
         renderArticles();
         checkHash();
+        setTimeout(checkHash, 300);
         lucide.createIcons();
     </script>
 </body>
